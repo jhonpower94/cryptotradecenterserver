@@ -11,7 +11,7 @@ var serviceAccount = require("./config/serviceaccount.json");
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
-  databaseURL: "https://hotblockinvest.firebaseio.com",
+ // databaseURL: "https://hotblockinvest.firebaseio.com",
 });
 
 var cors = require("cors");

@@ -17,22 +17,22 @@ router.route("/").post((req, res) => {
 
     // create reusable transporter object using the default SMTP transport
     let transporter = nodemailer.createTransport({
-      host: "mail.relianceexchange.co",
+      host: "mail.cryptotradecenter.co",
       port: 465,
       secure: true, // true for 465, false for other ports
       auth: {
-        user: "service@relianceexchange.co", // generated ethereal user
-        pass: "reliance2020", // generated ethereal password
+        user: "support@cryptotradecenter.co", // generated ethereal user
+        pass: "cryptotrade2020", // generated ethereal password
       },
     });
 
-    const sitename = "relianceexchange";
+    const sitename = "cryptotradecenter";
     const imagelogo =
       "https://firebasestorage.googleapis.com/v0/b/hotblockinvest.appspot.com/o/logos%2Flogo.png?alt=media&token=75b4dced-054b-4959-8ab2-4f82ba5b9f8f";
 
     // send mail with defined transport object
     let info = await transporter.sendMail({
-      from: '"relianceexchange" <service@relianceexchange.co>', // sender address
+      from: '"cryptotradecenter" <support@cryptotradecenter.co>', // sender address
       to: to, // list of receivers
       subject: `${subject} / ${sitename} ✔`, // Subject line
       // text: "Hello world?", // plain text body
