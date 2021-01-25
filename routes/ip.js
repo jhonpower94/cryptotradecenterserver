@@ -2,9 +2,9 @@ const express = require("express");
 const router = express.Router();
 const bodyParser = require("body-parser");
 const publicIp = require("public-ip");
-const wbm = require("wbm");
-const whatsAppClient = require("@green-api/whatsapp-api-client");
-const parsePhoneNumber = require("libphonenumber-js");
+// const wbm = require("wbm");
+// const whatsAppClient = require("@green-api/whatsapp-api-client");
+// const parsePhoneNumber = require("libphonenumber-js");
 const fs = require("fs");
 var geoip = require("geoip-lite");
 var cors = require("cors");
@@ -48,6 +48,8 @@ router.route("/").get((req, res) => {
     res.send(geo);
   });
 });
+
+/*
 
 router.route("/country").post((req, res) => {
   const { ip } = req.body;
@@ -95,5 +97,7 @@ router.route("/greenapi").get((req, res) => {
     .catch((err) => console.log(err));
   res.send("ok");
 });
+
+*/
 
 module.exports = router;
