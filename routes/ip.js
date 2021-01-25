@@ -12,12 +12,13 @@ router.use(cors());
 router.use(bodyParser.urlencoded({ extended: false }));
 router.use(bodyParser.json());
 
+/*
 const restAPI = whatsAppClient.restAPI({
   idInstance: "7195",
   apiTokenInstance: "a75b969af935ae6cbc1213c8e5f4d100607a72a82c471a43ef",
-});
+}); */
 
-const phoneNumber = parsePhoneNumber("+855094749060");
+// const phoneNumber = parsePhoneNumber("+855094749060");
 
 const jsonnumber = [
   {
@@ -49,7 +50,7 @@ router.route("/").get((req, res) => {
   });
 });
 
-/*
+
 
 router.route("/country").post((req, res) => {
   const { ip } = req.body;
@@ -57,8 +58,9 @@ router.route("/country").post((req, res) => {
   res.send(geo);
 });
 
+/*
 router.route("/number").get((req, res) => {
-  /*  if (phoneNumber) {
+    if (phoneNumber) {
     console.log({
       number: phoneNumber.number,
       country: phoneNumber.country,
