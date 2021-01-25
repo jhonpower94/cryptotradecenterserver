@@ -65,7 +65,7 @@ router.route("/number").get((req, res) => {
       isValid: phoneNumber.isValid(),
       //    type: phoneNumber.getType(), // Note: `.getType()` requires `/max` metadata: see below for an explanation.
     });
-  } */
+  } 
   let data = JSON.stringify(jsonnumber, null, 2);
 
   //write file
